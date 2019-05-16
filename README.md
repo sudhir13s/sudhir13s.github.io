@@ -1,3 +1,3 @@
-# [Sudhir Singh Portfolio] (https://sudhir13s.github.io)
+# [Sudhir Singh Portfolio](https://sudhir13s.github.io)
 This resume & theme is based on [Resume](https://startbootstrap.com/template-overviews/resume/) for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 I have used this resume & theme for my public portfolio. Please refer to [copyright-and-license](https://github.com/sudhir13s/sudhir13s.github.io#copyright-and-license) for details.
