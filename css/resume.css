@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 body {
@@ -96,7 +96,7 @@ section.resume-section {
   section.resume-section {
     min-height: 100vh; }
     section.resume-section .resume-item .resume-date {
-      min-width: 18rem; } }
+      min-width: 10rem; } }
 
 @media (min-width: 992px) {
   section.resume-section {
@@ -110,6 +110,9 @@ section.resume-section {
   color: #01465A !important; }
 
 a {
-  color: #067C9F; }
+  color: #01465A; }
   a:hover, a:focus, a:active {
-    color: #01465A; }
+    color: #000b0e; }
+
+li.list-heading {
+  font-weight: bold !important; }
