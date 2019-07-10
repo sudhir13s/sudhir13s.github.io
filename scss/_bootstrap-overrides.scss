@@ -16,4 +16,16 @@ a {
 }
 
 li.list-heading {
-  font-weight: bold !important; }
+  font-weight: bold !important; 
+}
+
+li.list-heading-normal {
+  font-size: 1.35rem;
+}
+
+ul.list-heading-ul {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.35rem;
+  margin-bottom: 0;
+}
