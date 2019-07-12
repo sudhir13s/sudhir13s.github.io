@@ -15,6 +15,16 @@ a {
   }
 }
 
+object {
+  pointer-events: none;
+  align-self: middle;
+}
+
+object.svg-icon {
+  position: relative;
+  top: .15em;
+}
+
 li.list-heading {
   font-weight: bold !important; 
 }

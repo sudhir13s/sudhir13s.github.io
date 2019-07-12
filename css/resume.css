@@ -26,10 +26,12 @@ h6 {
 
 h1 {
   font-size: 6rem;
-  line-height: 5.5rem; }
+  line-height: 5.5rem;
+  color: #e84e5a; }
 
 h2 {
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  color: #e84e5a; }
 
 .subheading {
   text-transform: uppercase;
@@ -113,6 +115,14 @@ a {
   color: #01465A; }
   a:hover, a:focus, a:active {
     color: #000b0e; }
+
+object {
+  pointer-events: none;
+  align-self: middle; }
+
+object.svg-icon {
+  position: relative;
+  top: .15em; }
 
 li.list-heading {
   font-weight: bold !important; }
