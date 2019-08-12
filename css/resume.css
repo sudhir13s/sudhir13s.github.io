@@ -121,8 +121,7 @@ object {
   align-self: middle; }
 
 object.svg-icon {
-  position: relative;
-  top: .15em; }
+  position: relative;}
 
 li.list-heading {
   font-weight: bold !important; }
