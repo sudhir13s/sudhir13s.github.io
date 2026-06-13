@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Sudhir's Profile",
-  description: "PhD Researcher · AI",
+  description: "Generalist Software Engineer · AI/ML",
 };
 
 export default function RootLayout({

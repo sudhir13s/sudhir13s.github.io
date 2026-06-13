@@ -2,15 +2,10 @@
 
 import { useEffect, useState } from 'react';
 
-const NAV_ITEMS = [
-  { id: 'about', label: 'About' },
-  { id: 'education', label: 'Education' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'blogs', label: 'Blogs' },
-  { id: 'contact', label: 'Contact' },
-];
+// @ts-ignore
+import { SECTIONS } from '../../data.js';
+
+const NAV_ITEMS = SECTIONS.map((s: any) => ({ id: s.id, label: s.label }));
 
 function Avatar() {
   return (
@@ -21,7 +16,8 @@ function Avatar() {
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('about');
-  const [html, setHtml] = useState('');
+  const activeSectionData = SECTIONS.find((s: any) => s.id === activeSection);
+  const html = activeSectionData ? activeSectionData.html : '';
 
   useEffect(() => {
     const handleContextMenu = (e: MouseEvent) => e.preventDefault();
@@ -44,12 +40,6 @@ export default function Home() {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
-
-  useEffect(() => {
-    fetch(`/api/content?section=${activeSection}`)
-      .then((res) => res.json())
-      .then((data: { html: string }) => setHtml(data.html));
-  }, [activeSection]);
 
   return (
     <>
