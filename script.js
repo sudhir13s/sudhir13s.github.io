@@ -33,7 +33,7 @@ nav.appendChild(ul);
 function loadSection(index, clickedLi) {
   ul.querySelectorAll('li').forEach(li => li.classList.remove('active'));
   clickedLi.classList.add('active');
-  contentEl.innerHTML = SECTIONS[index].render();
+  contentEl.innerHTML = SECTIONS[index].html;
 }
 
 // Load first section on init

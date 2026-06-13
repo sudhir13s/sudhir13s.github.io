@@ -72,9 +72,15 @@ classes/
 *.swp
 *.swo
 
-# Antigravity & Antigravity IDE
+# Antigravity & Agentic Tools
 .gemini/
 .antigravity/
 .antigravity-ide/
 antigravity/
 antigravity-ide/
+.claude/
+.claude-rules
+.devin/
+data.js.bak
+backup/
+sudhirs-profile/backup/
