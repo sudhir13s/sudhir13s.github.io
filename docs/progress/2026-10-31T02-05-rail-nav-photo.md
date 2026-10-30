@@ -7,13 +7,13 @@
 - Moved the top navigation to the left and removed the name from the top bar.
 - About now opens with "Hey, I'm Sudhir Singh".
 - The left rail shows the role, focus, and location on three lines.
-- Replaced the small round photo with the real and illustrated photo side by side, at about 268px wide.
+- Replaced the small round photo with the real and illustrated photo side by side, in a circle about 268px wide, as the owner asked.
 
 ### Changes
 
 - `src/layouts/SiteLayout.astro`, `src/styles/site.css`: new top bar, a 300px rail, and a larger photo on laptop and phone.
 - `src/content/profile.json`: `headline` split into `role` and `focus`.
-- `public/portrait.jpg`: a 480px-wide copy of `profile/RealAndGhibli-croped.jpg`.
+- `public/portrait.jpg`: a 480×480 center crop of `profile/RealAndGhibli-croped.jpg`.
 - `README.md`: updated for the new photo and profile fields.
 
 ### Decisions

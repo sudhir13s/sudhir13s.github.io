@@ -97,7 +97,7 @@ a:hover {
 .rail img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 
 .headline {
