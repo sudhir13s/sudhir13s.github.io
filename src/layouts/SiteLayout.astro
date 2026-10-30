@@ -37,6 +37,9 @@ const pageTitle = title === profile.name ? title : `${title} | ${profile.name}`;
   </head>
   <body>
     <header class="topbar">
+      <a class="brand" href={homeHref}>
+        {profile.name}
+      </a>
       <nav class="topnav" aria-label="Sections">
         {navItems.map(item => (
           <a
