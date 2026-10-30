@@ -7,6 +7,7 @@
 - Rewrote every role on Experience in one or two plain bullets.
 - Added a line under the title linking the resume and LinkedIn.
 - Removed the test suite.
+- Removed the Contact page. The one-liner stays on About, and the left rail keeps GitHub, LinkedIn, and Email.
 
 ### Changes
 

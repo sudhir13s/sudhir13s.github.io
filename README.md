@@ -49,4 +49,4 @@ To go live:
 
 ## Private files
 
-Resume and LinkedIn PDFs in `profile/` are git-ignored because they carry personal contact details. Never commit them.
+PDFs in `profile/` are git-ignored working copies. The published resume is `public/Sudhir_Singh_Resume.pdf`.
