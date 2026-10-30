@@ -22,3 +22,18 @@
 ### Backlog
 
 - No matching backlog line: this came directly from owner feedback.
+
+## 2026-10-31
+
+### Completed
+
+- Replaced the Experience page with the owner's own rewrite.
+
+### Changes
+
+- `src/content/pages/experience.md`: the owner's wording, unchanged. Only the resume and LinkedIn links on the intro line were put back.
+
+### Decisions
+
+- **Owner's wording wins:** it replaces the one-or-two-bullet version, so roles now have as many bullets as the owner wrote.
+- **Links kept:** without them, the resume PDF had no link anywhere on the site.
