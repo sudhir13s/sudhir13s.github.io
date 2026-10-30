@@ -28,3 +28,4 @@
 ### Changes
 
 - `src/content/pages/education.md`: digital signal processing, artificial intelligence, and a third subject the owner has forgotten.
+- `src/content/pages/education.md`: reworded the four Master's bullets to match that plain style, using the same facts. The reasons are still a draft for the owner to correct.
