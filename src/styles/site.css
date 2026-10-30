@@ -60,16 +60,10 @@ a:hover {
   border-bottom: 1px solid var(--rule);
 }
 
-.brand {
-  font-size: 18px;
-  color: var(--fg);
-}
-
 .topnav {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 18px;
-  margin-left: auto;
 }
 
 .topnav a[aria-current='page'] {
@@ -80,13 +74,13 @@ a:hover {
 /* Left rail + content */
 .frame {
   display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
+  grid-template-columns: 300px minmax(0, 1fr);
   min-height: calc(100vh - 60px);
 }
 
 .rail {
   background: var(--rail);
-  padding: 28px 20px;
+  padding: 24px 16px;
 }
 
 /* Keeps the photo in view while reading long pages. */
@@ -101,8 +95,9 @@ a:hover {
 }
 
 .rail img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -195,22 +190,9 @@ a:hover {
 
   .rail-inner {
     position: static;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: left;
-  }
-
-  .rail img {
-    width: 64px;
-    height: 64px;
   }
 
   .content {
     padding-left: 20px;
-  }
-
-  .topnav {
-    margin-left: 0;
   }
 }

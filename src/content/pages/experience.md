@@ -28,7 +28,9 @@ This is my version of the work I’ve done and the problems I’ve worked on. Fo
 
 - Another project I particularly enjoyed was an automated colony-picking system that I built with one other developer. We worked with a robotic arm, a camera, image segmentation (OpenCV), and a convolutional neural network (CNN) to identify colonies and guide the arm to pick them. It brought computer vision and physical movement together, making the process about 10 times faster than doing it by hand.
 
-- Being in a startup meant wearing multiple hats. I worked across hardware, device drivers, software, DevOps, and cloud systems, handling development, deployment, troubleshooting, and much more. It was fun to see how all those pieces came together to run an experiment. I found that very engaging and satisfying—building something that could reduce repetitive lab work, help scientists move their research forward, and reduce the drug discovery time from years to months. **It is the kind of work I would love to do again.**
+- Being in a startup meant wearing multiple hats. I worked across hardware, device drivers, software, DevOps, and cloud systems, handling development, deployment, troubleshooting, and much more. It was fun to see how all those pieces came together to run an experiment. I found that very engaging and satisfying—building something that could reduce repetitive lab work, help scientists move their research forward, and reduce the drug discovery time from years to months. 
+
+- **It is the kind of work I would love to do again.**
 
 ## Center On Access Technology, RIT/NTID — ML Software Engineer (Part-time)
 
@@ -50,7 +52,7 @@ This is my version of the work I’ve done and the problems I’ve worked on. Fo
 
 *Rochester, NY · Jan 2019 – Dec 2019*
 
-- While pursuing my master’s, I helped maintain the computer science department’s labs, servers (mail, web), Raspberry Pis, TV displays, and research machines (like cluster machines for distributed systems and ML research machines with the latest software and drivers), supporting the systems students and faculty depended on.
+- While pursuing my master’s, I helped maintain the computer science department’s labs, servers (mail, web), Raspberry Pis, TV displays, and research machines (like cluster machines for distributed systems and ML research machines with the latest software and drivers).
 
 - I also helped build a self-service portal so students could manage their own credentials instead of going through a system administrator each time, to reduce manual work and time.
 
@@ -76,4 +78,4 @@ This is my version of the work I’ve done and the problems I’ve worked on. Fo
 
 - Over time, my responsibilities grew beyond developing individual features. With a team of 4, I worked across the product lifecycle—from understanding client requirements and implementing changes to delivering releases and supporting clients when issues came up. We handled 3 parallel releases with zero client-reported issues.
 
-- From hardly being able to speak English fluently, I rose to the point of handling many client escalations, including business-critical escalations up to the VP and India head level. Sweat!
+- From hardly being able to speak English fluently, I went on to win a top 5 performer award and handle client escalations up to the VP and India head level. A lot of sweat!

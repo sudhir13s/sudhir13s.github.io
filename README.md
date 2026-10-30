@@ -40,7 +40,7 @@ This site has no test suite, on purpose. To check a change, build it and look at
 | --- | --- |
 | `src/content/pages/` | About, Experience, Projects, Research, Education, and Blog intro text |
 | `src/content/blog/` | Blog posts, none yet |
-| `src/content/profile.json` | Name, headline, and links |
+| `src/content/profile.json` | Name, headline, location, and links |
 | `src/layouts/`, `src/pages/` | The page shell and routes |
 | `src/styles/site.css` | All styling |
 | `public/` | Photo and resume PDF, served as they are |
@@ -48,9 +48,9 @@ This site has no test suite, on purpose. To check a change, build it and look at
 ## Changing the content
 
 - **A page:** edit its file in `src/content/pages/`. Its `order` sets its place in the top navigation.
-- **Name, headline, links:** edit `src/content/profile.json`. The left rail shows GitHub, LinkedIn, and Email.
+- **Headline, location, links:** edit `src/content/profile.json`. The left rail shows them under the photo.
 - **A blog post:** add a Markdown file to `src/content/blog/` with `title`, `date`, and `summary`.
-- **Photo:** replace `public/avatar.jpg`, a 200×200 crop of the image in `profile/`.
+- **Photo:** replace `public/portrait.jpg`, a 480×480 crop of `profile/RealAndGhibli-croped.jpg` centred on the faces, with the background extended above the heads, shown as a circle. The browser-tab icon is `public/avatar.jpg`.
 - **Resume:** replace `public/Sudhir_Singh_Resume.pdf`, keeping the name. Experience links to it.
 - **Links to files in `public/`:** make them relative, like `../Sudhir_Singh_Resume.pdf`.
 

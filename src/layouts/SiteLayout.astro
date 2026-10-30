@@ -21,6 +21,8 @@ const currentPath = Astro.url.pathname;
 const isCurrent = (href: string): boolean =>
   href === homeHref ? currentPath === homeHref : currentPath.startsWith(href);
 const avatarSrc = withBase('/avatar.jpg');
+const portraitSrc = withBase('/portrait.jpg');
+const description = `${profile.role}. ${profile.focus}.`;
 const pageTitle = title === profile.name ? title : `${title} | ${profile.name}`;
 ---
 
@@ -30,14 +32,11 @@ const pageTitle = title === profile.name ? title : `${title} | ${profile.name}`;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
-    <meta name="description" content={profile.headline} />
+    <meta name="description" content={description} />
     <link rel="icon" href={avatarSrc} />
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href={homeHref}>
-        {profile.name}
-      </a>
       <nav class="topnav" aria-label="Sections">
         {navItems.map(item => (
           <a
@@ -54,13 +53,15 @@ const pageTitle = title === profile.name ? title : `${title} | ${profile.name}`;
       <aside class="rail">
         <div class="rail-inner">
           <img
-            src={avatarSrc}
-            alt={profile.avatarAlt}
-            width="100"
-            height="100"
+            src={portraitSrc}
+            alt={profile.portraitAlt}
+            width="480"
+            height="480"
           />
           <p class="headline">
-            {profile.headline}
+            {profile.role}
+            <br />
+            {profile.focus}
             <br />
             {profile.location}
           </p>
