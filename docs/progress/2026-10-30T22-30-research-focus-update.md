@@ -13,7 +13,6 @@
 - `src/content/pages/research.md`: a list of interests, plus a closing line on reading papers and maybe writing white papers.
 - `src/content/pages/education.md`: machine learning bullet removed.
 - `src/styles/site.css`: the column goes from 640px to 920px.
-- `tests/site.test.mjs`: covers the Research order and the Education removal.
 
 ### Decisions
 

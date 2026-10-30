@@ -26,7 +26,7 @@ Node 24 and pnpm 11 (pinned in `package.json`).
 | Command | What it does |
 | --- | --- |
 | `pnpm dev` | Runs the site locally |
-| `pnpm test` | Builds the site and tests the output |
+| `pnpm run build` | Builds the site into `dist/` |
 | `pnpm run check` | Type-checks the code |
 | `pnpm exec prettier --write .` | Formats the code |
 
