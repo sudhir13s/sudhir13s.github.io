@@ -12,7 +12,6 @@ I moved to the US for this, looking for deeper technical challenges. Here's what
 
 - Distributed systems: after years of building services, I wanted to understand what really happens underneath when many machines have to work together.
 - Parallel computing: I took this to get exposure to running work on many processors at once, and to see why that's harder than it sounds.
-- Machine learning: I kept seeing it everywhere and wanted to learn it properly. My project was working out who wrote a piece of text.
 - NLP: I was curious how machines make sense of language. My term project told very similar languages apart, and I came back to it later, improving captions for hard-of-hearing classrooms.
 - Blockchain: I wanted to understand it beyond the buzz, so my capstone looked at the IOTA Tangle, an alternative to blockchain, for IoT.
 

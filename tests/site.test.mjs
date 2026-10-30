@@ -99,13 +99,26 @@ test('should list focus areas under the Master degree only', () => {
   for (const topic of [
     'Distributed systems',
     'Parallel computing',
-    'Machine learning',
     'NLP',
     'Blockchain',
   ]) {
     assert.ok(masters.includes(`<li>${topic}:`), topic);
   }
+  assert.ok(!masters.includes('Machine learning'));
   assert.ok(!bachelors.includes('<li>'));
+});
+
+test('should list current research interests on the research page', () => {
+  const research = readBuiltPage('research/index.html');
+  for (const interest of [
+    'Video and diffusion models',
+    'Voice models',
+    'World models',
+    'Agentic workflows',
+  ]) {
+    assert.ok(research.includes(`<li>${interest}</li>`), interest);
+  }
+  assert.ok(!research.includes('brain-inspired'));
 });
 
 test('should keep technologies in plain text on the experience page', () => {
