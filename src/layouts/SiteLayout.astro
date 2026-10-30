@@ -1,0 +1,82 @@
+---
+import {getCollection} from 'astro:content';
+import profile from '../content/profile.json';
+import {withBase} from '../lib/withBase';
+
+interface Props {
+  readonly title: string;
+}
+
+const {title} = Astro.props;
+const pages = await getCollection('pages');
+const navItems = pages
+  .sort((first, second) => first.data.order - second.data.order)
+  .map(page => ({
+    label: page.data.navLabel,
+    href: withBase(page.id === 'about' ? '/' : `/${page.id}/`),
+  }));
+const homeHref = withBase('/');
+const currentPath = Astro.url.pathname;
+const isCurrent = (href: string): boolean =>
+  href === homeHref ? currentPath === homeHref : currentPath.startsWith(href);
+const avatarSrc = withBase('/avatar.jpg');
+const pageTitle = title === profile.name ? title : `${title} | ${profile.name}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={profile.headline} />
+    <link rel="icon" href={avatarSrc} />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href={homeHref}>
+        {profile.name}
+      </a>
+      <nav class="topnav" aria-label="Sections">
+        {navItems.map(item => (
+          <a
+            href={item.href}
+            aria-current={isCurrent(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+    </header>
+
+    <div class="frame">
+      <aside class="rail">
+        <div class="rail-inner">
+          <img
+            src={avatarSrc}
+            alt={profile.avatarAlt}
+            width="100"
+            height="100"
+          />
+          <p class="headline">
+            {profile.headline}
+            <br />
+            {profile.location}
+          </p>
+          <div class="links">
+            {profile.links.map(link => (
+              <a href={link.url}>{link.label}</a>
+            ))}
+          </div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="column prose">
+          <h1>{title}</h1>
+          <slot />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

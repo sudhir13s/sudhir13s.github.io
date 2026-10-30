@@ -1,0 +1,14 @@
+---
+import {getEntry, render} from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+const about = await getEntry('pages', 'about');
+if (!about) {
+  throw new Error('Missing content file: src/content/pages/about.md');
+}
+const {Content} = await render(about);
+---
+
+<SiteLayout title={about.data.title}>
+  <Content />
+</SiteLayout>
