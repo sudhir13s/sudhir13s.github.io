@@ -93,6 +93,24 @@ test('should use the current public email on the contact page', () => {
   );
 });
 
+test('should keep technologies in plain text on the experience page', () => {
+  const experience = readBuiltPage('experience/index.html');
+  assert.ok(experience.includes('(Java17, WebFlux, Kafka, k8s, cursor)'));
+  assert.ok(!experience.includes('<strong>'));
+});
+
+test('should link GitHub, LinkedIn and email from the contact section', () => {
+  const contact = readBuiltPage('contact/index.html');
+  const [, section] = contact.split('<ul>');
+  for (const link of [
+    'href="https://github.com/sudhir13s"',
+    'href="https://www.linkedin.com/in/sudhir13s"',
+    'href="mailto:sudhir.19singh@gmail.com"',
+  ]) {
+    assert.ok(section.includes(link), link);
+  }
+});
+
 test('should leave the blog empty until there is a first post', () => {
   assert.match(readBuiltPage('blog/index.html'), /Nothing here yet/);
 });
