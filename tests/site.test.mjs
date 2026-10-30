@@ -110,14 +110,20 @@ test('should list focus areas under the Master degree only', () => {
 
 test('should list current research interests on the research page', () => {
   const research = readBuiltPage('research/index.html');
-  for (const interest of [
-    'Video and diffusion models',
-    'Voice models',
-    'World models',
+  const interests = [
     'Agentic workflows',
-  ]) {
-    assert.ok(research.includes(`<li>${interest}</li>`), interest);
-  }
+    'Voice models',
+    'Image and video models, including diffusion',
+    'World models',
+  ];
+  const positions = interests.map(interest =>
+    research.indexOf(`<li>${interest}</li>`),
+  );
+  assert.ok(!positions.includes(-1), 'every interest is listed');
+  assert.deepEqual(
+    positions,
+    [...positions].sort((first, second) => first - second),
+  );
   assert.ok(!research.includes('brain-inspired'));
 });
 

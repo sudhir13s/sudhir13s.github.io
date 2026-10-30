@@ -4,14 +4,16 @@
 
 ### Completed
 
-- Rewrote Research around current interests: video and diffusion models, voice models, world models, and agentic workflows.
+- Rewrote Research around current interests, in the owner's order: agentic workflows, voice models, image and video models including diffusion, and world models.
 - Removed machine learning from the Master's focus areas on Education.
+- Widened the text column so a laptop screen isn't left half empty.
 
 ### Changes
 
 - `src/content/pages/research.md`: a list of interests, plus a closing line on reading papers and maybe writing white papers.
 - `src/content/pages/education.md`: machine learning bullet removed.
-- `tests/site.test.mjs`: covers both changes.
+- `src/styles/site.css`: the column goes from 640px to 920px.
+- `tests/site.test.mjs`: covers the Research order and the Education removal.
 
 ### Decisions
 
