@@ -50,7 +50,7 @@ This site has no test suite, on purpose. To check a change, build it and look at
 - **A page:** edit its file in `src/content/pages/`. Its `order` sets its place in the top navigation.
 - **Headline, location, links:** edit `src/content/profile.json`. The left rail shows them under the photo.
 - **A blog post:** add a Markdown file to `src/content/blog/` with `title`, `date`, and `summary`.
-- **Photo:** replace `public/portrait.jpg`, a 480×480 center crop of `profile/RealAndGhibli-croped.jpg`, shown as a circle. The browser-tab icon is `public/avatar.jpg`.
+- **Photo:** replace `public/portrait.jpg`, a 480×480 crop of `profile/RealAndGhibli-croped.jpg` centred on the faces, with the background extended above the heads, shown as a circle. The browser-tab icon is `public/avatar.jpg`.
 - **Resume:** replace `public/Sudhir_Singh_Resume.pdf`, keeping the name. Experience links to it.
 - **Links to files in `public/`:** make them relative, like `../Sudhir_Singh_Resume.pdf`.
 

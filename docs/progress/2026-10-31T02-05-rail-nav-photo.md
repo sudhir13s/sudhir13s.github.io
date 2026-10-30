@@ -13,7 +13,7 @@
 
 - `src/layouts/SiteLayout.astro`, `src/styles/site.css`: new top bar, a 300px rail, and a larger photo on laptop and phone.
 - `src/content/profile.json`: `headline` split into `role` and `focus`.
-- `public/portrait.jpg`: a 480×480 center crop of `profile/RealAndGhibli-croped.jpg`.
+- `public/portrait.jpg`: a 480×480 crop of `profile/RealAndGhibli-croped.jpg` centred on the faces. The background is extended above the heads, so the whole head and the neck fit in the circle.
 - `README.md`: updated for the new photo and profile fields.
 
 ### Decisions
