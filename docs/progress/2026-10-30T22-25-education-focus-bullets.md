@@ -18,3 +18,13 @@
 ### Backlog
 
 - No matching backlog line: this came directly from owner feedback.
+
+## 2026-10-31
+
+### Completed
+
+- Added a short note under Oriental College of Technology, in the owner's words, about what they still remember from it.
+
+### Changes
+
+- `src/content/pages/education.md`: digital signal processing, artificial intelligence, and a third subject the owner has forgotten.

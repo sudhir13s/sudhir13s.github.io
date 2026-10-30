@@ -18,3 +18,5 @@ I moved to the US for this, looking for deeper technical challenges. Here's what
 ## Oriental College of Technology, Bhopal
 
 *Bachelor's in Information Technology, 2006 to 2010*
+
+This was a long time ago, and I don't remember much from it. I do remember some of the difficult subjects, like digital signal processing, artificial intelligence, and one more that I've forgotten. That one was difficult too.
