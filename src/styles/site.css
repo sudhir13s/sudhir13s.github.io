@@ -96,6 +96,7 @@ a:hover {
 
 .rail img {
   width: 100%;
+  max-width: 220px;
   height: auto;
   border-radius: 50%;
 }
@@ -189,10 +190,6 @@ a:hover {
 
   .rail-inner {
     position: static;
-  }
-
-  .rail img {
-    max-width: 280px;
   }
 
   .content {
