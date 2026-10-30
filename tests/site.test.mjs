@@ -93,6 +93,21 @@ test('should use the current public email on the contact page', () => {
   );
 });
 
+test('should list focus areas under the Master degree only', () => {
+  const education = readBuiltPage('education/index.html');
+  const [masters, bachelors] = education.split('Oriental College');
+  for (const topic of [
+    'Distributed systems',
+    'Parallel computing',
+    'Machine learning',
+    'NLP',
+    'Blockchain',
+  ]) {
+    assert.ok(masters.includes(`<li>${topic}:`), topic);
+  }
+  assert.ok(!bachelors.includes('<li>'));
+});
+
 test('should keep technologies in plain text on the experience page', () => {
   const experience = readBuiltPage('experience/index.html');
   assert.ok(experience.includes('(Java17, WebFlux, Kafka, k8s, cursor)'));
