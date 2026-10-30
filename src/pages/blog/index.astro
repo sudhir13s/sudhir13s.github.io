@@ -1,0 +1,33 @@
+---
+import {getCollection, getEntry, render} from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import {withBase} from '../../lib/withBase';
+
+const blogPage = await getEntry('pages', 'blog');
+if (!blogPage) {
+  throw new Error('Missing content file: src/content/pages/blog.md');
+}
+const {Content} = await render(blogPage);
+const posts = await getCollection('blog');
+const newestFirst = posts.sort(
+  (first, second) => second.data.date.valueOf() - first.data.date.valueOf(),
+);
+---
+
+<SiteLayout title={blogPage.data.title}>
+  {newestFirst.length === 0 ? (
+    <Content />
+  ) : (
+    newestFirst.map(post => (
+      <>
+        <h2>
+          <a href={withBase(`/blog/${post.id}/`)}>{post.data.title}</a>
+        </h2>
+        <p>
+          <em>{post.data.date.toISOString().slice(0, 10)}</em>
+        </p>
+        <p>{post.data.summary}</p>
+      </>
+    ))
+  )}
+</SiteLayout>

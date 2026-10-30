@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+# Manual until the site goes live, so an unfinished site is never published
+# by a merge. To go live, add `push: branches: [main]` here.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+env:
+  SITE_URL: https://sudhir13s.github.io
+  BASE_PATH: /sudhir-singh.co.in
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: withastro/action@v6
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
