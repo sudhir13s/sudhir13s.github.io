@@ -81,9 +81,6 @@ antigravity-ide/
 .claude/
 .claude-rules
 .devin/
-data.js.bak
-backup/
-sudhirs-profile/backup/
 
 # Astro
 .astro/

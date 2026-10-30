@@ -2,5 +2,4 @@ dist/
 .astro/
 pnpm-lock.yaml
 profile/
-project.md
 src/content/**/*.md
