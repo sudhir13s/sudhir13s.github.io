@@ -37,3 +37,4 @@
 
 - **Owner's wording wins:** it replaces the one-or-two-bullet version, so roles now have as many bullets as the owner wrote.
 - **Links kept:** without them, the resume PDF had no link anywhere on the site.
+- **Owner's original restored:** the owner supplied the original text. It now replaces the earlier copy, with spelling, grammar, and punctuation fixed and the owner's style kept ("Sweat!", "ancient", "you know what I mean here").

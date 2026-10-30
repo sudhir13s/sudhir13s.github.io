@@ -22,13 +22,13 @@ This is my version of the work I’ve done and the problems I’ve worked on. Fo
 
 *Menlo Park, CA · Jul 2021 – Jun 2023*
 
-- Strateos was a cloud lab startup where scientists could submit experiments through a browser and have robots carry them out. I worked on the software between those two sides—turning what a scientist wanted to do into instructions that lab equipment could execute. That helped reduce the time scientists spent on manual work by about 90%.
+- Strateos was a cloud lab startup where scientists could submit experiments through a browser and have robots carry them out. I worked on the software between those two sides—turning what a scientist wanted to do into instructions that lab equipment could execute. That helped reduce the manual time scientists spent by about 90%.
 
 - Strateos had two labs, each with several workcells containing multiple connected devices. I worked on integrating those devices and the workflow software that coordinated them, so they could carry out the steps of an experiment together. It meant understanding both the software workflows and how the equipment operated within each workcell.
 
 - Another project I particularly enjoyed was an automated colony-picking system that I built with one other developer. We worked with a robotic arm, a camera, image segmentation (OpenCV), and a convolutional neural network (CNN) to identify colonies and guide the arm to pick them. It brought computer vision and physical movement together, making the process about 10 times faster than doing it by hand.
 
-- Being in a startup meant wearing multiple hats. I worked across hardware, device drivers, software, DevOps, and cloud systems, handling development, deployment, troubleshooting, and much more. It was fun to see how all those pieces came together to run an experiment. I found that very engaging and satisfying—building something that could reduce repetitive lab work, help scientists move their research forward, and reduce drug discovery time from years to months. **It is the kind of work I would love to do again.**
+- Being in a startup meant wearing multiple hats. I worked across hardware, device drivers, software, DevOps, and cloud systems, handling development, deployment, troubleshooting, and much more. It was fun to see how all those pieces came together to run an experiment. I found that very engaging and satisfying—building something that could reduce repetitive lab work, help scientists move their research forward, and reduce the drug discovery time from years to months. **It is the kind of work I would love to do again.**
 
 ## Center On Access Technology, RIT/NTID — ML Software Engineer (Part-time)
 
@@ -44,15 +44,15 @@ This is my version of the work I’ve done and the problems I’ve worked on. Fo
 
 *Rochester, NY · Jan 2020 – Apr 2020*
 
-- I worked on a clinical trial management system where some pages were taking 4–5 seconds to load. I traced those delays back to inefficient database queries involving complex joins and worked on optimizing them, bringing page load times down to 1–2 seconds.
+- I worked on a clinical trial management system where some pages were taking 4–5 seconds to load. I traced those delays back to inefficient database queries with complex joins and worked on optimizing them, bringing those pages down to 1–2 seconds.
 
 ## Rochester Institute of Technology — Graduate Technical Assistant
 
 *Rochester, NY · Jan 2019 – Dec 2019*
 
-- While pursuing my master’s, I helped maintain the computer science department’s labs, servers (mail and web), Raspberry Pis, TV displays, and research machines (like cluster machines for distributed systems and ML research machines with the latest software and drivers), supporting the systems students and faculty depended on.
+- While pursuing my master’s, I helped maintain the computer science department’s labs, servers (mail, web), Raspberry Pis, TV displays, and research machines (like cluster machines for distributed systems and ML research machines with the latest software and drivers), supporting the systems students and faculty depended on.
 
-- I also helped build a self-service portal so students could manage their own credentials instead of going through a system administrator each time, reducing manual work and saving time.
+- I also helped build a self-service portal so students could manage their own credentials instead of going through a system administrator each time, to reduce manual work and time.
 
 ## Philips India Limited — Senior Software Engineer
 
@@ -64,7 +64,7 @@ This is my version of the work I’ve done and the problems I’ve worked on. Fo
 
 - I also worked on two demonstration projects, including a SMART on FHIR prototype, to show how these integrations would work in practice.
 
-- During a time when we did not have an architect, I helped guide our team and led an oncology integration through two releases.
+- There was a time when we did not have an architect, so I helped guide our team and led an oncology integration through two releases.
 
 ## CliniSys Solutions Limited — Software Engineer
 
@@ -72,7 +72,7 @@ This is my version of the work I’ve done and the problems I’ve worked on. Fo
 
 - I started my career here, working on laboratory and pathology software used by healthcare organizations. This was where I began learning how hospital and lab workflows operated, and how the software supported everything from patient registration and test orders to processing and reporting results.
 
-- My work included building features in those applications with Delphi and .NET and connecting them with hospital systems through HL7 interfaces in MUMPS (an old hierarchical database language—you know what I mean here). I also worked on report printing and client-specific reports, which meant understanding how different hospitals and labs used the software in their everyday work.
+- My work included building features in those applications with Delphi and .NET and connecting them with hospital systems through HL7 interfaces in MUMPS (an ancient hierarchical database language, you know what I mean here). I also worked on report printing and client-specific reports, which meant understanding how different hospitals and labs used the software in their everyday work.
 
 - Over time, my responsibilities grew beyond developing individual features. With a team of 4, I worked across the product lifecycle—from understanding client requirements and implementing changes to delivering releases and supporting clients when issues came up. We handled 3 parallel releases with zero client-reported issues.
 
