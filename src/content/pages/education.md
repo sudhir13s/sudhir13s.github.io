@@ -1,7 +1,7 @@
 ---
 title: Education
 navLabel: Education
-order: 5
+order: 4
 ---
 
 ## Rochester Institute of Technology

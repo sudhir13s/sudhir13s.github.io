@@ -1,10 +1,10 @@
 ---
 title: Research
 navLabel: Research
-order: 4
+order: 5
 ---
 
-I'm drawn to the research side of AI as well, not just the engineering, and I'm trying to slowly move towards applied AI. Right now, I'm most curious about:
+I'm drawn to the research side of AI as well, not just the engineering. Right now, I'm most curious about:
 
 - Voice models
 - Image and video models, including diffusion

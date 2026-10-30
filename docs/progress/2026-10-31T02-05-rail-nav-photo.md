@@ -15,6 +15,7 @@
 - `src/content/profile.json`: `headline` split into `role` and `focus`.
 - `public/portrait.jpg`: a 480×480 crop of `profile/RealAndGhibli-croped.jpg` centred on the faces. The background is extended above the heads, so the whole head and the neck fit in the circle.
 - `README.md`: updated for the new photo and profile fields.
+- `src/content/pages/education.md`, `research.md`: Education now comes before Research in the navigation, and the owner shortened the first line of Research.
 
 ### Decisions
 
