@@ -39,13 +39,9 @@ Node 24 and pnpm 11 (pinned in `package.json`).
 
 ## Deploying
 
-`.github/workflows/deploy.yml` publishes to GitHub Pages, and runs only by hand for now.
+`.github/workflows/deploy.yml` publishes to [sudhir13s.github.io](https://sudhir13s.github.io) on every merge to `main`.
 
-To go live:
-
-1. Set the repo's Pages source to **GitHub Actions**.
-2. Add `push: branches: [main]` to the workflow.
-3. For a custom domain, set `SITE_URL` to the domain in the workflow.
+For a custom domain, set `SITE_URL` to the domain in the workflow.
 
 ## Private files
 

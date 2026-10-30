@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
-# Manual until the site goes live, so an unfinished site is never published
-# by a merge. To go live, add `push: branches: [main]` here.
+# Every merge to main publishes the site.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
