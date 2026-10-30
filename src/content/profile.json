@@ -1,0 +1,11 @@
+{
+  "name": "Sudhir Singh",
+  "headline": "Software engineer, learning and building with AI",
+  "location": "Bengaluru, India",
+  "avatarAlt": "Illustrated portrait of Sudhir Singh",
+  "links": [
+    {"label": "GitHub", "url": "https://github.com/sudhir13s"},
+    {"label": "LinkedIn", "url": "https://www.linkedin.com/in/sudhir13s"},
+    {"label": "Email", "url": "mailto:sudhir.19singh@gmail.com"}
+  ]
+}

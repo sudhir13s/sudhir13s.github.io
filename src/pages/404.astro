@@ -1,0 +1,10 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import {withBase} from '../lib/withBase';
+---
+
+<SiteLayout title="Page not found">
+  <p>
+    That page doesn't exist. <a href={withBase('/')}>Go home</a>.
+  </p>
+</SiteLayout>
