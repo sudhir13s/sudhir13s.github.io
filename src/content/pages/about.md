@@ -4,7 +4,7 @@ navLabel: About
 order: 1
 ---
 
-I'm a software engineer in Bengaluru. I've been doing this for about 12 years, and I'm still a generalist, or trying to be one. I like figuring out how complex systems work.
+I'm a software engineer in Bengaluru, India. I've been doing this for about 12 years, and I'm still a generalist, or trying to be one. I like figuring out how complex systems work.
 
 So far that has meant healthcare software, robots that run lab experiments, and the systems behind walmart.com.
 
