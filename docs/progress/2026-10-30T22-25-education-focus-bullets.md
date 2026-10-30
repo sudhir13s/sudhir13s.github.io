@@ -30,3 +30,4 @@
 - `src/content/pages/education.md`: digital signal processing, artificial intelligence, and a third subject the owner has forgotten.
 - `src/content/pages/education.md`: reworded the four Master's bullets to match that plain style, using the same facts. The reasons are still a draft for the owner to correct.
 - `src/content/pages/education.md`: replaced those bullets with the owner's dictated reasons, cleaned up, and added Networking. MPI, sorting, and the two protocols were checked against the owner's course repositories.
+- `src/content/pages/education.md`: cut every Education entry to a single point of one to one and a half lines. The owner's dictation is raw material to distill, not text to copy.
