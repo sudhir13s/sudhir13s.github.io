@@ -1,9 +1,5 @@
 # Backlog
 
-## In progress
-
-- [ ] Replace the old sites with one Astro personal site, written in plain words — 2026-10-30 · [site] · feature/astro-personal-site
-
 ## Next
 
 - [ ] Choose and buy the domain (`sudhirsingh.co.in` was free on 2026-10-30), then add its DNS records and set `SITE_URL` and `BASE_PATH` in the deploy workflow — 2026-10-30 · [site]
