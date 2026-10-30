@@ -13,6 +13,34 @@ function readBuiltPage(path) {
   return readFileSync(join(DIST_DIR, path), 'utf8');
 }
 
+test('should give every project a month and year', () => {
+  const source = readFileSync(
+    new URL('../src/content/pages/projects.md', import.meta.url),
+    'utf8',
+  );
+  const projects = source.split(/^### /m).slice(1);
+  assert.ok(projects.length > 0);
+  for (const project of projects) {
+    const [heading] = project.split('\n');
+    assert.match(project, /\n\n\*[A-Z][a-z]{2} \d{4}/, heading);
+  }
+});
+
+test('should list every employer on the experience page', () => {
+  const experience = readBuiltPage('experience/index.html');
+  for (const employer of [
+    'Walmart Global Tech',
+    'Strateos',
+    'Center On Access Technology',
+    'Advarra',
+    'Rochester Institute of Technology',
+    'Philips',
+    'CliniSys',
+  ]) {
+    assert.ok(experience.includes(employer), employer);
+  }
+});
+
 test('should publish the home page with the profile photo', () => {
   const home = readBuiltPage('index.html');
   assert.match(home, /Hey, I(&#39;|&#x27;|')m Sudhir/);
