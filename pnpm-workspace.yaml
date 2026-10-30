@@ -1,0 +1,4 @@
+# Marks this repo as its own root so pnpm never adopts it into a workspace
+# file further up the folder tree, which would make `pnpm install` do nothing.
+packages:
+  - '.'
