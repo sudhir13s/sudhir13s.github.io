@@ -4,7 +4,7 @@
 
 ### Completed
 
-- Rewrote Research around current interests, in the owner's order: agentic workflows, voice models, image and video models including diffusion, and world models.
+- Rewrote Research around current interests, in the owner's order: voice models, image and video models including diffusion, and world models.
 - Removed machine learning from the Master's focus areas on Education.
 - Widened the text column so a laptop screen isn't left half empty.
 

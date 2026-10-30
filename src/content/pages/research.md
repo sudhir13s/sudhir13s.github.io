@@ -6,7 +6,6 @@ order: 4
 
 I'm drawn to the research side of AI as well, not just the engineering, and I'm moving toward applied AI. Right now I'm most curious about:
 
-- Agentic workflows
 - Voice models
 - Image and video models, including diffusion
 - World models

@@ -111,7 +111,6 @@ test('should list focus areas under the Master degree only', () => {
 test('should list current research interests on the research page', () => {
   const research = readBuiltPage('research/index.html');
   const interests = [
-    'Agentic workflows',
     'Voice models',
     'Image and video models, including diffusion',
     'World models',
@@ -125,6 +124,7 @@ test('should list current research interests on the research page', () => {
     [...positions].sort((first, second) => first - second),
   );
   assert.ok(!research.includes('brain-inspired'));
+  assert.ok(!research.includes('Agentic'));
 });
 
 test('should keep technologies in plain text on the experience page', () => {
