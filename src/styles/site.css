@@ -2,6 +2,7 @@
   --bg: #fdfdfd;
   --rail: #f7f8f9;
   --fg: #16181b;
+  --body: #454a51;
   --muted: #676d75;
   --accent: #1f6fd6;
   --rule: #e6e8eb;
@@ -16,7 +17,8 @@
     --bg: #15171a;
     --rail: #1b1e22;
     --fg: #eceef0;
-    --muted: #a0a6ae;
+    --body: #b3b8bf;
+    --muted: #8f959d;
     --accent: #6ea8f2;
     --rule: #2d3137;
     color-scheme: dark;
@@ -122,10 +124,31 @@ a:hover {
 }
 
 .column {
-  max-width: 680px;
+  max-width: 640px;
 }
 
-/* Markdown content */
+/* Markdown content: softer body text lets headings and bold tech names stand out. */
+.prose {
+  color: var(--body);
+}
+
+.prose :is(h1, h2, h3, strong) {
+  color: var(--fg);
+}
+
+.prose strong {
+  font-weight: 600;
+}
+
+.prose ul {
+  margin: 8px 0 14px;
+  padding-left: 20px;
+}
+
+.prose li + li {
+  margin-top: 10px;
+}
+
 .prose h1 {
   margin: 0 0 16px;
   font-size: 30px;

@@ -13,6 +13,18 @@ function readBuiltPage(path) {
   return readFileSync(join(DIST_DIR, path), 'utf8');
 }
 
+test('should keep body text softer than headings and tech names', () => {
+  const css = readFileSync(
+    new URL('../src/styles/site.css', import.meta.url),
+    'utf8',
+  );
+  assert.match(css, /\.prose \{\s*color: var\(--body\);/);
+  assert.match(
+    css,
+    /\.prose :is\(h1, h2, h3, strong\) \{\s*color: var\(--fg\);/,
+  );
+});
+
 test('should give every project a month and year', () => {
   const source = readFileSync(
     new URL('../src/content/pages/projects.md', import.meta.url),
