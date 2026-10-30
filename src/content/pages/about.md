@@ -1,5 +1,5 @@
 ---
-title: Hey, I'm Sudhir Singh
+title: Hey, I'm Sudhir
 navLabel: About
 order: 1
 ---

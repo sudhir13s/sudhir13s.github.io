@@ -6,6 +6,7 @@
   --muted: #676d75;
   --accent: #1f6fd6;
   --rule: #e6e8eb;
+  --rail-width: 300px;
   --font:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
     sans-serif;
@@ -33,7 +34,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font: 16px/1.6 var(--font);
+  font: 14px/1.6 var(--font);
 }
 
 a {
@@ -50,14 +51,21 @@ a:hover {
   outline-offset: 2px;
 }
 
-/* Top bar */
+/* Top bar: same columns as the frame, so the name sits over the photo and the
+   navigation starts at the split. */
 .topbar {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: var(--rail-width) minmax(0, 1fr);
   align-items: center;
-  gap: 8px 24px;
-  padding: 14px 20px;
+  padding: 14px 0;
   border-bottom: 1px solid var(--rule);
+}
+
+.brand {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: var(--fg);
+  text-align: center;
 }
 
 .topnav {
@@ -74,7 +82,7 @@ a:hover {
 /* Left rail + content */
 .frame {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
+  grid-template-columns: var(--rail-width) minmax(0, 1fr);
   min-height: calc(100vh - 60px);
 }
 
@@ -115,7 +123,7 @@ a:hover {
 
 .content {
   min-width: 0;
-  padding: 28px 20px 56px clamp(20px, 5vw, 72px);
+  padding: 28px 25px 56px clamp(20px, 5vw, 72px);
 }
 
 /* Fills any laptop screen; the cap only stops endless lines on large monitors. */
@@ -179,7 +187,28 @@ a:hover {
   margin-bottom: 6px;
 }
 
+/* Justified only where lines are long; on phones it leaves wide word gaps. */
+@media (min-width: 761px) {
+  .prose :is(p, li) {
+    text-align: justify;
+  }
+}
+
 @media (max-width: 760px) {
+  .topbar {
+    display: block;
+    padding: 14px 20px;
+  }
+
+  .brand {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .topnav {
+    justify-content: center;
+  }
+
   .frame {
     display: block;
   }
@@ -193,6 +222,6 @@ a:hover {
   }
 
   .content {
-    padding-left: 20px;
+    padding-inline: 20px;
   }
 }
