@@ -4,7 +4,7 @@ navLabel: Experience
 order: 2
 ---
 
-This is the short version, in my own words. For more detail, see my [LinkedIn](https://www.linkedin.com/in/sudhir13s), or [email me](mailto:sudhir.19singh@gmail.com) for my resume.
+This is the short version, in my own words. For more detail, see my [resume](../Sudhir_Singh_Resume.pdf) or [LinkedIn](https://www.linkedin.com/in/sudhir13s).
 
 ## Walmart Global Tech — Senior Software Engineer (Eligibility team)
 

@@ -5,7 +5,7 @@
 ### Completed
 
 - Rewrote every role on Experience in one or two plain bullets.
-- Added a line under the title pointing to LinkedIn, and to email for the resume.
+- Added a line under the title linking the resume and LinkedIn.
 - Removed the test suite.
 
 ### Changes
@@ -15,7 +15,7 @@
 
 ### Decisions
 
-- **Resume by email:** the resume PDF has a phone number, so it stays off the site.
+- **Resume linked:** the owner already shares it publicly when applying, so it goes on the site as it is, including the phone number.
 - **No tests:** this is a personal profile, and the owner doesn't want test cases for it.
 
 ### Backlog
