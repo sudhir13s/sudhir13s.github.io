@@ -12,7 +12,7 @@ permissions:
 
 env:
   SITE_URL: https://sudhir13s.github.io
-  BASE_PATH: /sudhir-singh.co.in
+  BASE_PATH: /
 
 jobs:
   build:

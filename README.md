@@ -1,4 +1,4 @@
-# sudhir-singh.co.in
+# sudhir13s.github.io
 
 Sudhir Singh's personal site. Plain words about who I am, not a resume. Layout inspired by [rishimehta.xyz](https://rishimehta.xyz).
 
@@ -44,8 +44,8 @@ Node 24 and pnpm 11 (pinned in `package.json`).
 To go live:
 
 1. Set the repo's Pages source to **GitHub Actions**.
-2. For a custom domain, set `SITE_URL` to the domain and `BASE_PATH` to `/` in the workflow.
-3. Add `push: branches: [main]` to the workflow.
+2. Add `push: branches: [main]` to the workflow.
+3. For a custom domain, set `SITE_URL` to the domain in the workflow.
 
 ## Private files
 
