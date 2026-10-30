@@ -7,7 +7,7 @@
 - Moved the top navigation to the left and removed the name from the top bar.
 - About now opens with "Hey, I'm Sudhir Singh".
 - The left rail shows the role, focus, and location on three lines.
-- Replaced the small round photo with the real and illustrated photo side by side, in a circle 220px wide, as the owner asked.
+- Replaced the small round photo with the real and illustrated photo side by side, in a circle 200px wide, as the owner asked.
 
 ### Changes
 
