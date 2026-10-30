@@ -84,3 +84,9 @@ antigravity-ide/
 data.js.bak
 backup/
 sudhirs-profile/backup/
+
+# Astro
+.astro/
+
+# Resume and LinkedIn exports carry personal contact details and stay local.
+profile/*.pdf

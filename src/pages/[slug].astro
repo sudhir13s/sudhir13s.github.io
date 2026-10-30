@@ -1,0 +1,25 @@
+---
+import {getCollection, render} from 'astro:content';
+import type {CollectionEntry} from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+interface Props {
+  readonly page: CollectionEntry<'pages'>;
+}
+
+export async function getStaticPaths() {
+  // About is the home page and the blog has its own route.
+  const ROUTES_ELSEWHERE = new Set(['about', 'blog']);
+  const pages = await getCollection('pages');
+  return pages
+    .filter(page => !ROUTES_ELSEWHERE.has(page.id))
+    .map(page => ({params: {slug: page.id}, props: {page}}));
+}
+
+const {page} = Astro.props;
+const {Content} = await render(page);
+---
+
+<SiteLayout title={page.data.title}>
+  <Content />
+</SiteLayout>
