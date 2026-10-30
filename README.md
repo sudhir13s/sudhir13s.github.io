@@ -1,4 +1,4 @@
-# sudhir-singh.co.in
+# sudhir13s.github.io
 
 Sudhir Singh's personal site. Plain words about who I am, not a resume. Layout inspired by [rishimehta.xyz](https://rishimehta.xyz).
 
@@ -26,7 +26,7 @@ Node 24 and pnpm 11 (pinned in `package.json`).
 | Command | What it does |
 | --- | --- |
 | `pnpm dev` | Runs the site locally |
-| `pnpm test` | Builds the site and tests the output |
+| `pnpm run build` | Builds the site into `dist/` |
 | `pnpm run check` | Type-checks the code |
 | `pnpm exec prettier --write .` | Formats the code |
 
@@ -39,14 +39,10 @@ Node 24 and pnpm 11 (pinned in `package.json`).
 
 ## Deploying
 
-`.github/workflows/deploy.yml` publishes to GitHub Pages, and runs only by hand for now.
+`.github/workflows/deploy.yml` publishes to [sudhir13s.github.io](https://sudhir13s.github.io) on every merge to `main`.
 
-To go live:
-
-1. Set the repo's Pages source to **GitHub Actions**.
-2. For a custom domain, set `SITE_URL` to the domain and `BASE_PATH` to `/` in the workflow.
-3. Add `push: branches: [main]` to the workflow.
+For a custom domain, set `SITE_URL` to the domain in the workflow.
 
 ## Private files
 
-Resume and LinkedIn PDFs in `profile/` are git-ignored because they carry personal contact details. Never commit them.
+PDFs in `profile/` are git-ignored working copies. The published resume is `public/Sudhir_Singh_Resume.pdf`.

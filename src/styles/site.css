@@ -123,8 +123,9 @@ a:hover {
   padding: 28px 20px 56px clamp(20px, 5vw, 72px);
 }
 
+/* Fills any laptop screen; the cap only stops endless lines on large monitors. */
 .column {
-  max-width: 640px;
+  max-width: 1400px;
 }
 
 /* Markdown content: softer body text lets headings and bold tech names stand out. */

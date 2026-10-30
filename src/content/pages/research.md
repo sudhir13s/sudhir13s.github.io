@@ -4,6 +4,10 @@ navLabel: Research
 order: 4
 ---
 
-I'm drawn to the research side of AI, not just the engineering. Right now I'm most curious about world models, diffusion models, agentic workflows, and brain-inspired AI.
+I'm drawn to the research side of AI as well, not just the engineering, and I'm moving toward applied AI. Right now I'm most curious about:
 
-One day I'd like to publish my own work on what I explore, including where these models hit their limits.
+- Voice models
+- Image and video models, including diffusion
+- World models
+
+I read papers and model architectures to keep myself up to date. In the future, I might write some white papers based on what I learn.
