@@ -20,6 +20,43 @@ test('should publish the home page with the profile photo', () => {
   assert.ok(existsSync(join(DIST_DIR, 'avatar.jpg')));
 });
 
+test('should publish every section at its own URL', () => {
+  for (const section of [
+    'experience',
+    'projects',
+    'research',
+    'education',
+    'blog',
+    'contact',
+  ]) {
+    assert.ok(existsSync(join(DIST_DIR, section, 'index.html')), section);
+  }
+});
+
+test('should keep the site free of resume wording and old contact details', () => {
+  const pages = listBuiltFiles().filter(file => file.endsWith('.html'));
+  const site = pages.map(readBuiltPage).join('\n');
+  for (const banned of [
+    'sudhir.13singh',
+    'Compunnel',
+    'Technical Leader',
+    'Technical Lead',
+  ]) {
+    assert.ok(!site.includes(banned), `found "${banned}"`);
+  }
+});
+
+test('should use the current public email on the contact page', () => {
+  assert.match(
+    readBuiltPage('contact/index.html'),
+    /sudhir\.19singh@gmail\.com/,
+  );
+});
+
+test('should leave the blog empty until there is a first post', () => {
+  assert.match(readBuiltPage('blog/index.html'), /Nothing here yet/);
+});
+
 test('should never publish a PDF', () => {
   const pdfs = listBuiltFiles().filter(file => file.endsWith('.pdf'));
   assert.deepEqual(pdfs, []);
