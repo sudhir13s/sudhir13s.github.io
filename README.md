@@ -1,79 +1,52 @@
 # sudhir-singh.co.in
 
-Personal portfolio website — minimal, text-first, left-sidebar navigation. Inspired by [rishimehta.xyz](https://rishimehta.xyz).
+Sudhir Singh's personal site. Plain words about who I am, not a resume. Layout inspired by [rishimehta.xyz](https://rishimehta.xyz).
 
-This repository contains two versions of the portfolio:
-1. **Vanilla HTML/CSS/JS** (Root): A lightweight, zero-dependency static version.
-2. **Next.js / TypeScript** (`sudhirs-profile/`): A modern, dynamic framework-based implementation of the same layout with API-driven content.
+```mermaid
+flowchart LR
+  Content["Markdown in src/content"] --> Astro["Astro build"]
+  Astro --> Dist["Static pages in dist/"]
+  Dist --> Pages["GitHub Pages"]
+```
 
-## Quick Start
+## Quick start
 
-### 1. Vanilla Static Version (Root)
-
-Open directly in your browser:
 ```bash
-open index.html
+pnpm install
+pnpm dev
+# → http://localhost:4321
 ```
 
-Or serve locally:
-```bash
-npx serve .
-# → http://localhost:3000
-```
+## Prerequisites
 
-### 2. Next.js Version (`sudhirs-profile`)
+Node 24 and pnpm 11 (pinned in `package.json`).
 
-Change directory, install dependencies, and run the development server:
-```bash
-cd sudhirs-profile
-npm install
-npm run dev
-# → http://localhost:4001
-```
+## Development
 
-## Stack
+| Command | What it does |
+| --- | --- |
+| `pnpm dev` | Runs the site locally |
+| `pnpm test` | Builds the site and tests the output |
+| `pnpm run check` | Type-checks the code |
+| `pnpm exec prettier --write .` | Formats the code |
 
-- **Vanilla**: HTML5, CSS3, ES6 JavaScript
-- **Next.js**: React, Next.js 14, TypeScript, CSS Variables
+## Changing the content
 
-## Structure
+- **A page:** edit its file in `src/content/pages/`. Its `order` sets its place in the top navigation.
+- **Name, headline, links:** edit `src/content/profile.json`.
+- **A blog post:** add a Markdown file to `src/content/blog/` with `title`, `date`, and `summary`.
+- **Photo:** replace `public/avatar.jpg`, a 200×200 crop of the image in `profile/`.
 
-```
-sudhir-singh.co.in/
-├── index.html          # Vanilla Layout + sections
-├── styles.css          # Vanilla Sidebar + content styles
-├── script.js           # Vanilla Section switching
-├── data.js             # Vanilla portfolio data
-└── sudhirs-profile/    # Next.js Application
-    ├── app/            # Next.js Page & API routes
-    ├── public/         # Static assets (images, avatar)
-    └── package.json    # Project configuration & scripts
-```
+## Deploying
 
-## Sections
+`.github/workflows/deploy.yml` publishes to GitHub Pages, and runs only by hand for now.
 
-| Nav label | Content |
-|-----------|---------|
-| About     | Intro, current AI/ML focus |
-| Education | Degrees and institutions |
-| Experience | 7+ years across Healthcare, BioTech, Walmart |
-| Projects  | miniAgent, HuggingFace Knowledge Assistant, Fake Review Detection, others |
-| Skills    | Python, ML, NLP, LLMs, Agentic AI, Java, Spring Boot |
-| Contact   | Email and links |
+To go live:
 
-## Design Reference
+1. Set the repo's Pages source to **GitHub Actions**.
+2. For a custom domain, set `SITE_URL` to the domain and `BASE_PATH` to `/` in the workflow.
+3. Add `push: branches: [main]` to the workflow.
 
-- Layout: fixed left sidebar, scrollable right content panel
-- Optimized for 1366px–1920px (standard laptop/desktop)
-- Responsive breakpoint at 768px
+## Private files
 
-## Deploy
-
-**GitHub Pages / Netlify / Vercel**
-
-- Root version: Drag-and-drop the root folder or deploy direct via GitHub Pages using the `main` branch.
-- Next.js version: Deploy the `sudhirs-profile` subfolder using default Next.js build command (`next build`).
-
-## Source Content
-
-Original profile: [sudhir13s.github.io](https://sudhir13s.github.io)
+Resume and LinkedIn PDFs in `profile/` are git-ignored because they carry personal contact details. Never commit them.
