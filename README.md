@@ -38,12 +38,12 @@ This site has no test suite, on purpose. To check a change, build it and look at
 
 | Path | What's in it |
 | --- | --- |
-| `src/content/pages/` | About, Experience, Projects, Research, Education, and Blog intro text |
+| `src/content/pages/` | About, Experience, Projects, Education, Research, and Blog intro text |
 | `src/content/blog/` | Blog posts, none yet |
 | `src/content/profile.json` | Name, headline, location, and links |
 | `src/layouts/`, `src/pages/` | The page shell and routes |
 | `src/styles/site.css` | All styling |
-| `public/` | Photo and resume PDF, served as they are |
+| `public/` | Photo, tab icon, and resume PDF, served as they are |
 
 ## Changing the content
 
@@ -60,11 +60,3 @@ This site has no test suite, on purpose. To check a change, build it and look at
 - **Checks:** `.github/workflows/ci.yml` type-checks and builds every pull request.
 - **Pages setting:** the repo's Pages source is **GitHub Actions**.
 - **Custom domain:** add it in the repo's **Settings → Pages**, point its DNS at GitHub, and set `SITE_URL` to it in the deploy workflow.
-
-## Private files
-
-PDFs in `profile/` are git-ignored working copies. The published resume is `public/Sudhir_Singh_Resume.pdf`, and it includes contact details on purpose.
-
-## Old site
-
-The previous site's code is kept in [sudhir-singh-old-github-io](https://github.com/sudhir13s/sudhir-singh-old-github-io). It's no longer published.
