@@ -20,7 +20,7 @@ const homeHref = withBase('/');
 const currentPath = Astro.url.pathname;
 const isCurrent = (href: string): boolean =>
   href === homeHref ? currentPath === homeHref : currentPath.startsWith(href);
-const avatarSrc = withBase('/avatar.jpg');
+const tabIconSrc = withBase('/favicon.png');
 const portraitSrc = withBase('/portrait.jpg');
 const description = `${profile.role}. ${profile.focus}.`;
 const pageTitle = title === profile.name ? title : `${title} | ${profile.name}`;
@@ -33,7 +33,7 @@ const pageTitle = title === profile.name ? title : `${title} | ${profile.name}`;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
-    <link rel="icon" href={avatarSrc} />
+    <link rel="icon" type="image/png" href={tabIconSrc} />
   </head>
   <body>
     <header class="topbar">
