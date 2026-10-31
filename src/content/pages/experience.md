@@ -4,7 +4,7 @@ navLabel: Experience
 order: 2
 ---
 
-This is my version of the work I’ve done and the problems I’ve worked on. For more detail, see my [resume](../Sudhir_Singh_Resume.pdf) or [LinkedIn](https://www.linkedin.com/in/sudhir13s).
+Here’s some of the work I’ve done and the problems I’ve solved. For more detail, see my [resume](../Sudhir_Singh_Resume.pdf) or [LinkedIn](https://www.linkedin.com/in/sudhir13s).
 
 ## Walmart Global Tech — Senior Software Engineer (Eligibility team)
 
