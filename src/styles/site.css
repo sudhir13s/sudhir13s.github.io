@@ -34,7 +34,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font: 14px/1.6 var(--font);
+  font: 15px/1.6 var(--font);
 }
 
 a {
@@ -111,14 +111,14 @@ a:hover {
 
 .headline {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--muted);
 }
 
 .links {
   display: flex;
   gap: 14px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .content {
@@ -178,7 +178,7 @@ a:hover {
 
 /* A line of only italics right under a heading is its date or place. */
 .prose :is(h2, h3) + p > em:only-child {
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   color: var(--muted);
 }
